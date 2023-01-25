@@ -18,8 +18,3 @@ func removeElement(nums []int, val int) int {
 }
 
 // @lc code=end
-
-func main() {
-	// removeElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2)
-	removeElement([]int{3, 2, 2, 3}, 3)
-}
