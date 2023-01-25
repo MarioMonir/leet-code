@@ -5,8 +5,6 @@
  */
 package main
 
-import "fmt"
-
 // @lc code=start
 func finalValueAfterOperations(operations []string) int {
 	count := 0
@@ -21,8 +19,3 @@ func finalValueAfterOperations(operations []string) int {
 }
 
 // @lc code=end
-
-func main() {
-	fmt.Println(finalValueAfterOperations([]string{"--X", "X++", "X++"}))
-	fmt.Println(finalValueAfterOperations([]string{"++X", "X++", "X++"}))
-}
