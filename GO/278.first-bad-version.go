@@ -13,11 +13,12 @@ package main
  *			          false if current version is good
  * func isBadVersion(version int) bool;
  */
+
 func firstBadVersion(n int) int {
 	r := n
 	for l := 1; l < r; {
 		m := l + (r-l)/2
-		if isBadVersion(m) {
+		if false {
 			r = m
 		} else {
 			l = m + 1
