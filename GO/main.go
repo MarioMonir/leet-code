@@ -1,30 +1,13 @@
 package main
 
+import "fmt"
+
 func main() {
 
-// Create a linked list
-	listNode := &ListNode{
-		Val: 1,
-		Next: &ListNode{
-			Val: 2,
-			Next: &ListNode{
-				Val: 2,
-				Next: &ListNode{
-					Val: 3,
-					Next: &ListNode{
-						Val: 3,
-						Next: nil,
-					},
-				},
-			},
-		},
-	}
+	nums1 := []int{1, 2, 3, 0, 0, 0}
 
+	merge(nums1, 3, []int{2, 5, 6}, 3)
 
+	fmt.Println(nums1)
 
-	PrintNode(listNode)
-
-	deleteDuplicates(listNode)
-
-	PrintNode(listNode)
 }
