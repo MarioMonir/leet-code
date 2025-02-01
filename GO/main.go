@@ -3,12 +3,7 @@ package main
 import "fmt"
 
 func main() {
-
-	fmt.Println(mySqrt(4))
-	fmt.Println(mySqrt(8))
-	fmt.Println(mySqrt(1))
-	fmt.Println(mySqrt(0))
-	fmt.Println(mySqrt(2147483647))
-	fmt.Println(mySqrt(1660267039))
-
+	fmt.Println(isArraySpecial([]int{1, 2, 3, 4, 5}))
+	fmt.Println(isArraySpecial([]int{2, 1, 4}))
+	fmt.Println(isArraySpecial([]int{4, 3, 1, 6}))
 }
