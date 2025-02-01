@@ -4,10 +4,11 @@ import "fmt"
 
 func main() {
 
-	nums1 := []int{1, 2, 3, 0, 0, 0}
-
-	merge(nums1, 3, []int{2, 5, 6}, 3)
-
-	fmt.Println(nums1)
+	fmt.Println(mySqrt(4))
+	fmt.Println(mySqrt(8))
+	fmt.Println(mySqrt(1))
+	fmt.Println(mySqrt(0))
+	fmt.Println(mySqrt(2147483647))
+	fmt.Println(mySqrt(1660267039))
 
 }
