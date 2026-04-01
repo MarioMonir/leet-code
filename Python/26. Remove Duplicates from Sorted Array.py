@@ -13,7 +13,8 @@ class Solution:
         nums.sort()
         return unique
         
-    def removeDuplicates(self, nums: List[int]) -> int:
+    
+    def removeDuplicates_memory_optimization(self, nums: List[int]) -> int:
         current = 101
         unique = 0
         for i in range(len(nums)):
@@ -25,6 +26,15 @@ class Solution:
 
         nums.sort()
         return unique
+
+    def removeDuplicates(self, nums: List[int]) -> int:
+        step = 0
+        for i in range(1, len(nums)):
+            if nums[step] != nums[i]:
+                step += 1
+                nums[step] = nums[i]
+        return step + 1
+         
 
 
 
